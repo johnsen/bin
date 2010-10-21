@@ -1,0 +1,3 @@
+#!/bin/bash
+
+jconv /home/d/linux_muziek/jconv/boxbor0_jazz.conf 

@@ -1,0 +1,4 @@
+#!/bin/sh
+me=`basename $0`
+export LD_LIBRARY_PATH="/home/d/lilypond/usr/lib"
+exec "/home/d/lilypond/usr/bin/$me" "$@"

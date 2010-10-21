@@ -1,0 +1,5 @@
+#!/bin/bash
+
+jconv /home/d/linux_muziek/jconv/line6.conf &
+
+exit

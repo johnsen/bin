@@ -1,0 +1,19 @@
+#!/bin/bash
+
+jconv /home/d/linux_muziek/jconv/boxbor0_jazz.conf  &
+
+sleep 4
+
+jack_connect jconv\:Output.L system\:playback_1 &
+
+sleep 2
+
+jack_connect jconv\:Output.R system\:playback_2 &
+
+sleep 2
+
+jack_connect system\:capture_1 jconv\:Input  &
+
+
+
+exit

@@ -1,0 +1,3 @@
+#!/bin/sh
+set -e 
+rdiff-backup --exclude /home/d/4home --exclude /home/d/.VirtualBox --exclude /home/d/ISO --exclude /home/d/OEROEG --exclude /home/d/.wine --exclude /home/d/muziek /home/d/ /media/backuphome/bakkup

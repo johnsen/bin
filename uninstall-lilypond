@@ -1,0 +1,32 @@
+#! /bin/sh
+
+quiet=no
+while test -n "$1";
+do
+    case "$1" in
+	--help)
+	    cat <<BLA
+options
+  --help    this help
+  --quiet   do not ask for confirmation
+BLA
+	    exit 0
+	    ;;
+	--quiet)
+	    quiet=yes
+	    ;;
+    esac
+    shift
+done
+if test "$quiet" = "no"; then
+    echo "About to remove a lilypond installation from /home/d/lilypond"
+    echo "Press ^C to abort, Enter to proceed"
+    read junk
+fi
+
+for binary in lilypond; do
+    rm /home/d/bin/$binary
+done
+rm -f /home/d/bin/lilypond-wrapper.guile /home/d/bin/lilypond-wrapper.python
+rm -rf /home/d/lilypond
+rm /home/d/bin/uninstall-lilypond

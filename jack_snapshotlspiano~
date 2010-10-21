@@ -1,0 +1,6 @@
+#! /bin/bash
+/usr/bin/konsole &
+
+sleep 2
+
+jack_snapshot restore lspiano

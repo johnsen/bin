@@ -1,0 +1,3 @@
+#! /bin/bash
+
+jack_snapshot restore lspiano

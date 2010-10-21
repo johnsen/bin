@@ -1,0 +1,7 @@
+#!/bin/sh
+
+date=`date "+%Y-%m-%dT%H:%M:%S"`
+rsync -aPx --link-dest=/media/backuphome/current /home/d/ --exclude=/home/d/4home/ /media/backuphome/back-$date
+rm -f /media/backuphome/current
+ln -s back-$date /media/backuphome/current
+

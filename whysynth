@@ -1,0 +1,3 @@
+#! /bin/bash
+jack-dssi-host whysynth.so
+exit
